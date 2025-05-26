@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.display {
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: right;
+    min-height: 60px;
+}
+
+.previous-operand {
+    color: #666;
+    font-size: 1.2rem;
+    min-height: 24px;
+}
+
+.current-operand {
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #666;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+button:active {
+    background-color: #555;
+}
+
+.span-two {
+    width: 130px;
+}
+
+button[onclick*="appendOperator"] {
+    background-color: #ff9500;
+}
+
+button[onclick*="appendOperator"]:hover {
+    background-color: #ffaa33;
+}
+
+button[onclick*="appendOperator"]:active {
+    background-color: #cc7700;
+}
+
+button[onclick="clearAll()"],
+button[onclick="deleteLastChar()"] {
+    background-color: #a5a5a5;
+    color: #000;
+}
