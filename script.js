@@ -76,5 +76,4 @@ function deleteLastChar() {
 // Initialize display
 updateDisplay();
 
-// comment 
 
